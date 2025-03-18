@@ -50,9 +50,13 @@ namespace TemperatureConverter
                 {
                     Console.WriteLine();
                     int choice1;
-                    Console.WriteLine("Choose the unit to  convert to: ");
-                    Console.WriteLine("1.Fahrenheit");
-                    Console.WriteLine("2.Kelvin");
+                    Console.ForegroundColor= ConsoleColor.Green;
+ Console.WriteLine(" -----------------------------------");
+ Console.WriteLine("| Choose the unit to  convert to:   |");
+ Console.WriteLine("| 1.Fahrenheit                      |");
+ Console.WriteLine("| 2.Kelvin                          |");
+ Console.WriteLine(" -----------------------------------");
+ Console.ResetColor();
 
                 c1:
                     try
@@ -103,10 +107,13 @@ namespace TemperatureConverter
                 {
                     Console.WriteLine();
                     int choice2;
-                    Console.WriteLine("Choose the unit to  convert to: ");
-                    Console.WriteLine("1.Celsius");
-                    Console.WriteLine("2.Kelvin");
-
+                    Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine(" -----------------------------------");
+Console.WriteLine("| Choose the unit to  convert to:   |");
+Console.WriteLine("| 1.Kelvin                          |");
+Console.WriteLine("| 2.Celsius                         |");
+Console.WriteLine(" -----------------------------------");
+Console.ResetColor ();
                 c2:
                     try
                     {
@@ -143,6 +150,7 @@ namespace TemperatureConverter
                     }
                     catch (FormatException)
                     {
+                        
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("String is not applicable, input number instead.\n");
                         Console.ResetColor();
@@ -154,10 +162,13 @@ namespace TemperatureConverter
                 {
                     Console.WriteLine();
                     int choice3;
-                    Console.WriteLine("Choose the unit to  convert to: ");
-                    Console.WriteLine("1.Celsius");
-                    Console.WriteLine("2.Fahrenheit");
-
+                    Console.ForegroundColor = ConsoleColor.Green;
+ Console.WriteLine(" -----------------------------------");
+ Console.WriteLine("| Choose the unit to  convert to:   |");
+ Console.WriteLine("| 1.Celsius                         |");
+ Console.WriteLine("| 2.Fahrenheit                      |");
+ Console.WriteLine(" -----------------------------------");
+ Console.ResetColor();
                 c3:
                     try
                     {
